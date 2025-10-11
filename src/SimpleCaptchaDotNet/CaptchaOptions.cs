@@ -1,4 +1,4 @@
-﻿namespace SimpleCaptcha;
+﻿namespace SimpleCaptchaDotNet;
 
 public readonly struct CaptchaOptions
 {

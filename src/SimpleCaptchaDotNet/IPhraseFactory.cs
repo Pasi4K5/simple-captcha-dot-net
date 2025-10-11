@@ -1,4 +1,4 @@
-﻿namespace SimpleCaptcha;
+﻿namespace SimpleCaptchaDotNet;
 
 public interface IPhraseFactory
 {

@@ -1,7 +1,7 @@
 using System;
 using SixLabors.ImageSharp;
 
-namespace SimpleCaptcha;
+namespace SimpleCaptchaDotNet;
 
 public interface IColorFactory
 {

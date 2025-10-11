@@ -1,7 +1,7 @@
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 
-namespace SimpleCaptcha;
+namespace SimpleCaptchaDotNet;
 
 public interface ICaptchaFactory
 {

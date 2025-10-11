@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace SimpleCaptcha;
+namespace SimpleCaptchaDotNet;
 
 public sealed class CaptchaPhraseFactory : IPhraseFactory
 {

@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using SixLabors.ImageSharp;
 
-namespace SimpleCaptcha;
+namespace SimpleCaptchaDotNet;
 
 public class CaptchaColorFactory : IColorFactory
 {

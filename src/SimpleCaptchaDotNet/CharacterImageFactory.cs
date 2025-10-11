@@ -7,7 +7,7 @@ using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 
-namespace SimpleCaptcha;
+namespace SimpleCaptchaDotNet;
 
 public static class CharacterImageFactory
 {

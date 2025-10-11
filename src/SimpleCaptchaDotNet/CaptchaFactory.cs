@@ -7,7 +7,7 @@ using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 
-namespace SimpleCaptcha;
+namespace SimpleCaptchaDotNet;
 
 public sealed class CaptchaFactory : ICaptchaFactory
 {
@@ -34,7 +34,7 @@ public sealed class CaptchaFactory : ICaptchaFactory
         _rng = random ?? new();
 
         fontStream ??= Assembly.GetExecutingAssembly()
-            .GetManifestResourceStream("SimpleCaptcha.Resources.MomsTypewriter.ttf")
+            .GetManifestResourceStream("SimpleCaptchaDotNet.Resources.MomsTypewriter.ttf")
             ?? throw new InvalidOperationException("Could not find embedded font resource.");
 
         _font = new FontCollection().Add(fontStream).CreateFont(_opt.FontSize);
