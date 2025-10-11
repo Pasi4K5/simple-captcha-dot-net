@@ -4,6 +4,14 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Title>SimpleCaptcha</Title>
+        <Authors>Pascal Pomper</Authors>
+        <Description>A simple .NET library that generates CAPTCHA images. </Description>
+        <Copyright>2025 Pascal Pomper</Copyright>
+        <PackageProjectUrl>https://github.com/Pasi4K5/simple-captche</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/Pasi4K5/simple-captche/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/Pasi4K5/simple-captche</RepositoryUrl>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
 
     <ItemGroup>
