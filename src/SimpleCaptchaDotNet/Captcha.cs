@@ -3,4 +3,16 @@ using SixLabors.ImageSharp.PixelFormats;
 
 namespace SimpleCaptchaDotNet;
 
-public record Captcha(Image<Rgba32> Image, string Text);
+public sealed record Captcha(Image<Rgba32> Image, string Text) : IDisposable
+{
+    ~Captcha()
+    {
+        Dispose();
+    }
+
+    public void Dispose()
+    {
+        Image.Dispose();
+        GC.SuppressFinalize(this);
+    }
+}
