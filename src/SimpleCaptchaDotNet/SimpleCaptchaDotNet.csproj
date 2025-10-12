@@ -15,6 +15,7 @@
         <RootNamespace>SimpleCaptchaDotNet</RootNamespace>
         <RepositoryUrl>https://github.com/Pasi4K5/simple-captcha-dot-net</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Version>1.1.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
