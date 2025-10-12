@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Reflection;
+﻿using System.Reflection;
 using SixLabors.Fonts;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Drawing.Processing;
@@ -40,14 +38,14 @@ public sealed class CaptchaFactory : ICaptchaFactory
         _font = new FontCollection().Add(fontStream).CreateFont(_opt.FontSize);
     }
 
-    public Image<Rgba32> Next()
+    public Captcha Next()
     {
         var image = new Image<Rgba32>(_opt.Width, _opt.Height);
+        var phrase = _phraseGen.Next();
 
         image.Mutate(img =>
         {
             img.BackgroundColor(Color.Gray);
-            var phrase = _phraseGen.Next();
 
             for (var i = 0; i < phrase.Length; i++)
             {
@@ -106,6 +104,6 @@ public sealed class CaptchaFactory : ICaptchaFactory
             }
         });
 
-        return image;
+        return new(image, phrase);
     }
 }
