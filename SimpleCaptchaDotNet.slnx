@@ -1,4 +1,3 @@
 ﻿<Solution>
-  <Project Path="src\SimpleCaptcha.Test\SimpleCaptcha.Test.csproj" Type="Classic C#" />
   <Project Path="src\SimpleCaptchaDotNet\SimpleCaptchaDotNet.csproj" Type="Classic C#" />
 </Solution>
