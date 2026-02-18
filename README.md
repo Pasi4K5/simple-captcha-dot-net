@@ -63,6 +63,7 @@ var captchaFactory = new CaptchaFactory(
         Length = 5,
     },
     new MyColorFactory(),
+    new Random(1234),
     fontStream
 );
 
